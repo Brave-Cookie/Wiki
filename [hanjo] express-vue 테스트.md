@@ -4,7 +4,7 @@ ex-vue
 ├── backend
 │   └── config (아래 참고)
 └── frontend
-```\
+```
 
 ### 기본 세팅
 
