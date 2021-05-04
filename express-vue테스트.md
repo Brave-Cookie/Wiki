@@ -1,6 +1,6 @@
 ### 폴더 구조
 ```
-ex-vue
+상위폴더
 ├── backend
 │   └── config (아래 참고)
 └── frontend
