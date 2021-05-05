@@ -16,6 +16,13 @@
 <br>
 <br>
 
+## 참고용
+
+### RTC Multi 사용해본사람
+- https://jungeun960.tistory.com/45?category=393541
+
+<br>
+
 ## 막 모아놓은 링크
 
 ### rtc 원리설명 홈피
