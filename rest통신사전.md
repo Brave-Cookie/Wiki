@@ -4,8 +4,12 @@
 
 <br>
 
-## Restful 규칙
-> [자세한 규칙](https://one-it.tistory.com/entry/RESTful-API-%EC%84%A4%EA%B3%84-%EA%B7%9C%EC%B9%99)
+## Rest 통신 규칙
+
+### Restful HTTP Method
+
+- [Rest 통신 기본 개념](https://one-it.tistory.com/entry/RESTful-API-%EC%84%A4%EA%B3%84-%EA%B7%9C%EC%B9%99)
+- [POST와 GET의 차이](https://im-developer.tistory.com/166)
 
 |HTTP Method|설명|
 |---|---|
@@ -14,6 +18,21 @@
 |PUT|리소스 전체 갱신(넣겠다)|
 |PATCH|리소스 부분 갱신(붙이겠다)|
 |DELETE|리소스 삭제|
+
+### HTTP 상태 코드
+
+- [기본 설명](https://sanghaklee.tistory.com/61)
+
+|Code|설명|
+|---|---|
+|200|OK|
+|201|Created|
+|202|Accepted|
+|204|No Content|
+|400|Bad Request|
+|401|Unauthorized|
+|403|Forbidden|
+|404|Not Found|
 
 <br>
 
@@ -37,7 +56,6 @@
 
 |Path|Method|Data|설명|
 |---|---|---|---|
-|/register|POST|user_id, user_pw, user_name, user_email/ |회원정보 등록|
-|/login|POST? -> 잘 모르겠어요..|user_id, user_pw/ |회원이 등록되었는지 확인 후 accessToken |
+|/register|GET|???|Rest 통신 테스트|
 
 
