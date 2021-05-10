@@ -37,7 +37,7 @@
 
 |Path|Method|Data|설명|
 |---|---|---|---|
-|/register|POST|user_id, user_pw, user_name, user_email|회원정보 등록|
-|/login|GET? POST? -> 잘 모르겠어요..|???|회원이 등록되었는지 확인 후 accessToken |
+|/register|POST|user_id, user_pw, user_name, user_email/ |회원정보 등록|
+|/login|POST? -> 잘 모르겠어요..|user_id, user_pw/ |회원이 등록되었는지 확인 후 accessToken |
 
 
