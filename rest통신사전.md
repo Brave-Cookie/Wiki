@@ -17,17 +17,26 @@
 
 <br>
 
-## 기본 Rest API 주소
+## Rest URL/Data Type
+
+### 기본 Rest API 주소
 
 |환경|주소|
 |---|---|
 |개발서버|http://localhost:3000/api|
 
-<br>
+### /test
+> 테스트 관련
 
-## 테스트
-> 테스트를 수행하는 기능 어쩌구
+|Path|Method|Data|설명|
+|---|---|---|---|
+|/chk_DB|POST|테스트 데이터|Rest 통신 테스트|
 
-|Path|Type|설명|
-|---|---|---|
-|/DB_chk|String|Rest 통신 테스트|
+### /auth
+> 회원정보 관련
+
+|Path|Method|Data|설명|
+|---|---|---|---|
+|/register|GET|???|Rest 통신 테스트|
+
+
