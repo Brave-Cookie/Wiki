@@ -56,6 +56,6 @@
 
 |Path|Method|Data|설명|
 |---|---|---|---|
-|/register|GET|???|Rest 통신 테스트|
-
+|/register|POST|{user_id, user_email, user_pw, user_name}|Rest 통신 테스트|
+|/login|POST||로그인|
 
