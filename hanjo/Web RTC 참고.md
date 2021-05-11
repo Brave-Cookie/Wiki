@@ -24,6 +24,10 @@
 ### 카멜레온 블로그
 - https://blog.naver.com/yoon980208/221504339599
 
+### Chrome 음성인식
+- https://mizzo-dev.tistory.com/entry/SpeechRecognition-WebChrome-%EC%9D%8C%EC%84%B1-%EC%9D%B8%EC%8B%9D
+
+<br>
 <br>
 
 ## 막 모아놓은 링크
