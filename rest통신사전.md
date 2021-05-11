@@ -61,7 +61,7 @@
 > 회원정보 관련
 
 |Path|Method|req|res|Code|설명|
-|---|---|---|---|---|
+|---|---|---|---|---|---|
 |/register|POST|{user_id, user_email, user_pw, user_name}||1:아이디 중복됨|회원가입|
 |/login|POST|{user_id, user_pw}|{accessToken}|1:가입된 ID가 없음 2:비밀번호가 틀림|로그인|
 
