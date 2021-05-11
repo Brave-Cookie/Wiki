@@ -63,5 +63,5 @@
 |Path|Method|Data|Code|설명|
 |---|---|---|---|---|
 |/register|POST|{user_id, user_email, user_pw, user_name}|1:아이디 중복됨|회원가입 기능수행|
-|/login|POST|||로그인|
+|/login|POST||1:가입된 ID가 없음 2:비밀번호가 틀림|로그인|
 
