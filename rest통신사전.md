@@ -34,6 +34,11 @@
 |403|Forbidden|
 |404|Not Found|
 
+### 각 기능별 상황 코드 규칙
+
+- 만약 ../`URL명` 에 매핑된 기능일때, { code : `URL명`_1,2,3.... } 이런식으로 명시
+
+
 <br>
 
 ## Rest URL/Data Type
@@ -54,8 +59,8 @@
 ### /auth
 > 회원정보 관련
 
-|Path|Method|Data|설명|
-|---|---|---|---|
-|/register|POST|{user_id, user_email, user_pw, user_name}|Rest 통신 테스트|
-|/login|POST||로그인|
+|Path|Method|Data|Code|설명|
+|---|---|---|---|---|
+|/register|POST|{user_id, user_email, user_pw, user_name}|1:아이디 중복됨|회원가입 기능수행|
+|/login|POST|||로그인|
 
