@@ -37,8 +37,11 @@
 ### 각 기능별 상황 코드 규칙
 
 - 예외처리 상황 발생시, `status 202 (Accepted)` 와 함께 코드 응답
+- 예외처리 코드는 반드시 통신 사전에 기재
 - 코드는 만약 ../`URL명` 에 매핑된 기능일때, { code : `URL명`_1,2,3.... } 이런식으로 명시
-
+```
+ex) { code : login_1 }
+```
 
 <br>
 
@@ -65,3 +68,17 @@
 |/register|POST|{user_id, user_email, user_pw, user_name}||1:아이디 중복됨|회원가입|
 |/login|POST|{user_id, user_pw}|{accessToken}|1:가입된 ID가 없음 <br>2:비밀번호가 틀림|로그인|
 
+### /project
+> 프로젝트 관련
+
+|Path|Method|req|res|Code|설명|
+|---|---|---|---|---|---|
+|/:user_id|GET||{???}||사용자가 소유한 프로젝트 추출|
+|/create|POST|{project_name}|||프로젝트 생성|
+
+### /conf_log
+> 회의록 관련
+
+|Path|Method|req|res|Code|설명|
+|---|---|---|---|---|---|
+|||||||
