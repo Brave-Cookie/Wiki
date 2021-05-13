@@ -10,6 +10,7 @@
 
 - [Rest 통신 기본 개념](https://one-it.tistory.com/entry/RESTful-API-%EC%84%A4%EA%B3%84-%EA%B7%9C%EC%B9%99)
 - [POST와 GET의 차이](https://im-developer.tistory.com/166)
+- [URI 규칙](https://devuna.tistory.com/79)
 
 |HTTP Method|설명|
 |---|---|
@@ -73,8 +74,9 @@ ex) { code : login_1 }
 
 |Path|Method|req|res|Code|설명|
 |---|---|---|---|---|---|
-|/:user_id|GET||{???}||사용자가 소유한 프로젝트 추출|
 |/create|POST|{project_name}|||프로젝트 생성|
+|/list/:user-id|GET||{???}||사용자가 소유한 프로젝트 추출|
+
 
 ### /conf_log
 > 회의록 관련
