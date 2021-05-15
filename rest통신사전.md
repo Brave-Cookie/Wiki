@@ -12,34 +12,35 @@
 - [POST와 GET의 차이](https://im-developer.tistory.com/166)
 - [URI 규칙](https://devuna.tistory.com/79)
 
-|HTTP Method|설명|
-|---|---|
-|GET|조회(받겠다)|
-|POST|리소스 생성(보내겠다)|
-|PUT|리소스 전체 갱신(넣겠다)|
-|PATCH|리소스 부분 갱신(붙이겠다)|
-|DELETE|리소스 삭제|
+| HTTP Method | 설명                       |
+| ----------- | -------------------------- |
+| GET         | 조회(받겠다)               |
+| POST        | 리소스 생성(보내겠다)      |
+| PUT         | 리소스 전체 갱신(넣겠다)   |
+| PATCH       | 리소스 부분 갱신(붙이겠다) |
+| DELETE      | 리소스 삭제                |
 
 ### HTTP 상태 코드
 
 - [기본 설명](https://sanghaklee.tistory.com/61)
 
-|Code|설명|
-|---|---|
-|200|OK|
-|201|Created|
-|202|Accepted|
-|204|No Content|
-|400|Bad Request|
-|401|Unauthorized|
-|403|Forbidden|
-|404|Not Found|
+| Code | 설명         |
+| ---- | ------------ |
+| 200  | OK           |
+| 201  | Created      |
+| 202  | Accepted     |
+| 204  | No Content   |
+| 400  | Bad Request  |
+| 401  | Unauthorized |
+| 403  | Forbidden    |
+| 404  | Not Found    |
 
 ### 각 기능별 상황 코드 규칙
 
 - 예외처리 상황 발생시, `status 202 (Accepted)` 와 함께 코드 응답
 - 예외처리 코드는 반드시 통신 사전에 기재
-- 코드는 만약 ../`URL명` 에 매핑된 기능일때, { code : `URL명`_1,2,3.... } 이런식으로 명시
+- 코드는 만약 ../`URL명` 에 매핑된 기능일때, { code : `URL명`\_1,2,3.... } 이런식으로 명시
+
 ```
 ex) { code : login_1 }
 ```
@@ -50,37 +51,40 @@ ex) { code : login_1 }
 
 ### 기본 Rest API 주소
 
-|환경|주소|
-|---|---|
-|개발서버|http://localhost:3000/api|
+| 환경     | 주소                      |
+| -------- | ------------------------- |
+| 개발서버 | http://localhost:3000/api |
 
 ### /test
+
 > 테스트 관련
 
-|Path|Method|Data|설명|
-|---|---|---|---|
-|/chk_DB|POST|테스트 데이터|Rest 통신 테스트|
+| Path    | Method | Data          | 설명             |
+| ------- | ------ | ------------- | ---------------- |
+| /chk_DB | POST   | 테스트 데이터 | Rest 통신 테스트 |
 
 ### /auth
+
 > 회원정보 관련
 
-|Path|Method|req|res|Code|설명|
-|---|---|---|---|---|---|
-|/register|POST|{user_id, user_email, user_pw, user_name}||1:아이디 중복됨|회원가입|
-|/login|POST|{user_id, user_pw}|{accessToken}|1:가입된 ID가 없음 <br>2:비밀번호가 틀림|로그인|
+| Path      | Method | req                                       | res           | Code                                     | 설명     |
+| --------- | ------ | ----------------------------------------- | ------------- | ---------------------------------------- | -------- |
+| /register | POST   | {user_id, user_email, user_pw, user_name} |               | 1:아이디 중복됨                          | 회원가입 |
+| /login    | POST   | {user_id, user_pw}                        | {accessToken} | 1:가입된 ID가 없음 <br>2:비밀번호가 틀림 | 로그인   |
 
 ### /project
+
 > 프로젝트 관련
 
-|Path|Method|req|res|Code|설명|
-|---|---|---|---|---|---|
-|/create|POST|{user_id, project_name}|||프로젝트 생성|
-|/list/:user-id|GET||{???}||사용자가 소유한 프로젝트 추출|
-
+| Path           | Method | req                     | res   | Code                | 설명                          |
+| -------------- | ------ | ----------------------- | ----- | ------------------- | ----------------------------- |
+| /create        | POST   | {user_id, project_name} |       | 1:회의이름이 중복됨 | 프로젝트 생성                 |
+| /list/:user-id | GET    |                         | {???} |                     | 사용자가 소유한 프로젝트 추출 |
 
 ### /conf_log
+
 > 회의록 관련
 
-|Path|Method|req|res|Code|설명|
-|---|---|---|---|---|---|
-|||||||
+| Path | Method | req | res | Code | 설명 |
+| ---- | ------ | --- | --- | ---- | ---- |
+|      |        |     |     |      |      |
