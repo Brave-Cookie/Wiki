@@ -76,11 +76,12 @@ ex) { code : login_1 }
 
 > 프로젝트 관련
 
-| Path           | Method | req                         | res                                | Code | 설명                          |
-| -------------- | ------ | --------------------------- | ---------------------------------- | ---- | ----------------------------- |
-| /create        | POST   | {user_id, project_name}     |                                    |      | 프로젝트 생성                 |
-| /list/:user_id | GET    |                             | {list : {project_id,project_name}} |      | 사용자가 소유한 프로젝트 추출 |
-| /issue         | POST   | {project_id, issue_content} |                                    |      | 이슈등록                      |
+| Path                   | Method | req                         | res                                | Code | 설명                          |
+| ---------------------- | ------ | --------------------------- | ---------------------------------- | ---- | ----------------------------- |
+| /create                | POST   | {user_id, project_name}     |                                    |      | 프로젝트 생성                 |
+| /list/:user_id         | GET    |                             | {list : {project_id,project_name}} |      | 사용자가 소유한 프로젝트 추출 |
+| /issue                 | POST   | {project_id, issue_content} |                                    |      | 이슈등록                      |
+| /issuelist/:project_id | GET    |                             | {list : {issue_content}}           |      | 프로젝트에 해당하는 이슈 추출 |
 
 ### /conf_log
 
@@ -88,7 +89,6 @@ ex) { code : login_1 }
 
 | Path | Method | req | res | Code | 설명 |
 | ---- | ------ | --- | --- | ---- | ---- |
-
 
 <br>
 
