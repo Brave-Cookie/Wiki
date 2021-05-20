@@ -47,9 +47,9 @@ ex) { code : login_1 }
 
 <br>
 
-## Rest URL/Data Type
+## Express Rest API 주소
 
-### 기본 Rest API 주소
+### 기본 Domain
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
@@ -88,3 +88,16 @@ ex) { code : login_1 }
 
 | Path | Method | req | res | Code | 설명 |
 | ---- | ------ | --- | --- | ---- | ---- |
+
+
+<br>
+
+## Flask Rest API 주소
+
+### 기본 Domain
+
+| 환경     | 주소                      |
+| -------- | ------------------------- |
+| 개발서버 | http://localhost:5000/api |
+
+### 알아서 url
