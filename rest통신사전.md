@@ -76,14 +76,14 @@ ex) { code : login_1 }
 
 > 프로젝트 관련
 
-| Path                      | Method | req                         | res                                | Code | 설명                               |
-| ------------------------- | ------ | --------------------------- | ---------------------------------- | ---- | ---------------------------------- |
-| /create                   | POST   | {user_id, project_name}     |                                    |      | 프로젝트 생성                      |
-| /list/:user_id            | GET    |                             | {list : {project_id,project_name}} |      | 사용자가 소유한 프로젝트 추출      |
-| /issue/create             | POST   | {project_id, issue_content} |                                    |      | 이슈등록                           |
-| /issue/list/:project_id   | GET    |                             | {list : {issue_content}}           |      | 프로젝트에 해당하는 이슈 추출      |
-| /member/search/:user_name | GET    |                             | {list : {user_id}}                 |      | 사용자 이름에 해당하는 아이디 추출 |
-| /member/add               | POST   | {project_id, user_id}       |                                    |      | 참여자등록                         |
+| Path                      | Method | req                         | res                                | Code                 | 설명                               |
+| ------------------------- | ------ | --------------------------- | ---------------------------------- | -------------------- | ---------------------------------- |
+| /create                   | POST   | {user_id, project_name}     |                                    |                      | 프로젝트 생성                      |
+| /list/:user_id            | GET    |                             | {list : {project_id,project_name}} |                      | 사용자가 소유한 프로젝트 추출      |
+| /issue/create             | POST   | {project_id, issue_content} |                                    |                      | 이슈등록                           |
+| /issue/list/:project_id   | GET    |                             | {list : {issue_content}}           |                      | 프로젝트에 해당하는 이슈 추출      |
+| /member/search/:user_name | GET    |                             | {list : {user_id}}                 | 1.해당 사용자가 없음 | 사용자 이름에 해당하는 아이디 추출 |
+| /member/add               | POST   | {project_id, user_id}       |                                    | 1.이미 추가한 사용자 | 참여자등록                         |
 
 ### /conf_log
 
