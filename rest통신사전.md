@@ -84,6 +84,7 @@ ex) { code : login_1 }
 | /issue/list/:project_id   | GET    |                             | {list : {issue_content}}                   |                      | 프로젝트에 해당하는 이슈 추출      |
 | /member/search/:user_name | GET    |                             | {list : {user_id}}                         | 1.해당 사용자가 없음 | 사용자 이름에 해당하는 아이디 추출 |
 | /member/add               | POST   | {project_id, user_id}       |                                            | 1.이미 추가한 사용자 | 참여자등록                         |
+| /member/list/:project_id  | GET    |                             | {list: {user_id}}                          |                      | 프로젝트에 해당하는 사용자 추출    |
 | /log/list/:project_id     | GET    |                             | {meeting_date,meeting_name,list:{user_id}} | 미팅리스트           |                                    |
 
 ### /conf_log
