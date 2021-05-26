@@ -97,7 +97,7 @@ ex) { code : login_1 }
 | ------------------------------ | ------ | --- | --------------------------------------------------- | ---- | ----------------------------------- |
 | /log/fetch/:meeing_id          | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 회의록 내용 가져오기                |
 | /log/fetch/:meeing_id/:feeling | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 감정 필터링 된 회의록 내용 가져오기 |
-| /log/rank/:meeting_id/:feeling | GET    |     | firstrank                                           |      | 보낸감정중 가장 많이 나온사람       |
+| /log/rank/:meeting_id/:feeling | GET    |     | firstrank :{user_name}                              |      | 보낸감정중 가장 많이 나온사람       |
 
 <br>
 
