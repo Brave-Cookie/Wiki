@@ -112,9 +112,10 @@ ex) { code : login_1 }
 
 > 회의록 관련
 
-| Path                      | Method | req | res                  | Code | 설명              |
-| ------------------------- | ------ | --- | -------------------- | ---- | ----------------- |
-| /log/wordcloud/:meeing_id | GET    |     | {list :(word,count)} |      | 단어빈도수 리스트 |
-| /log/summary/:meeting_id  | GET    |     | summary_text         |      | 회의록요약        |
+| Path                          | Method | req | res                   | Code | 설명              |
+| ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
+| /log/wordcloud/:meeing_id     | GET    |     | {list :(word,count)}  |      | 단어빈도수 리스트 |
+| /log/summary/:meeting_id      | GET    |     | summary_text          |      | 회의록요약        |
+| /log/feelingCount/:meeting_id | GET    |     | list:{'feeling':횟수} |      | 감정빈도수        |
 
 <br>
