@@ -5,7 +5,7 @@
 
 <br>
 
-### 가상환경 .venv 사용
+### 초기 세팅
 
 1. `backend_flask` 폴더에서 터미널 오픈
 
@@ -15,15 +15,29 @@
 ```
 
 3. 가상환경 실행
+> 터미널에 `(.venv)`가 추가되어야 정상 실행된 것.
 ```
 > .venv/Scripts/activate
 ```
-> 터미널에 `(.venv)`가 추가되어야 정상 실행된 것.
 
-4. Flask 실행
+4. 관련 모듈 설치
+> requirements 문서를 참조하여 한번에 설치.
+```
+> pip install -r requirements.txt
+```
+
+5. Flask 실행
 ```
 > python app.py
 ```
+
+6. 가상환경 종료
+```
+> deactivate
+```
+
+
+
 
 ### 설치 모듈 리스트 추출
 
