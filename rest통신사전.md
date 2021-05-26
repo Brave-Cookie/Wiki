@@ -89,7 +89,7 @@ ex) { code : login_1 }
 | /member/list/:project_id  | GET    |                             | {list: {user_id}}                                |                      | 프로젝트에 해당하는 사용자 추출    |
 | /log/list/:project_id     | GET    |                             | {list: {meeting_id, meeting_date, meeting_name}} |                      | 프로젝트에 해당하는 회의록 추출    |
 
-### /conf_log
+### /meetingLog
 
 > 회의록 관련
 
