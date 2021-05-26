@@ -76,25 +76,25 @@ ex) { code : login_1 }
 
 > 프로젝트 관련
 
-| Path                      | Method | req                         | res                                        | Code                 | 설명                               |
-| ------------------------- | ------ | --------------------------- | ------------------------------------------ | -------------------- | ---------------------------------- |
-| /create                   | POST   | {user_id, project_name}     |                                            |                      | 프로젝트 생성                      |
-| /list/:user_id            | GET    |                             | {list : {project_id,project_name}}         |                      | 사용자가 소유한 프로젝트 추출      |
-| /issue/create             | POST   | {project_id, issue_content} |                                            |                      | 이슈등록                           |
-| /issue/list/:project_id   | GET    |                             | {list : {issue_content}}                   |                      | 프로젝트에 해당하는 이슈 추출      |
-| /member/search/:user_name | GET    |                             | {list : {user_id}}                         | 1.해당 사용자가 없음 | 사용자 이름에 해당하는 아이디 추출 |
-| /member/add               | POST   | {project_id, user_id}       |                                            | 1.이미 추가한 사용자 | 참여자등록                         |
-| /member/list/:project_id  | GET    |                             | {list: {user_id}}                          |                      | 프로젝트에 해당하는 사용자 추출    |
-| /log/list/:project_id     | GET    |                             | {list: {meeting_id, meeting_date, meeting_name}} |                | 프로젝트에 해당하는 회의록 추출    |
+| Path                      | Method | req                         | res                                              | Code                 | 설명                               |
+| ------------------------- | ------ | --------------------------- | ------------------------------------------------ | -------------------- | ---------------------------------- |
+| /create                   | POST   | {user_id, project_name}     |                                                  |                      | 프로젝트 생성                      |
+| /list/:user_id            | GET    |                             | {list : {project_id,project_name}}               |                      | 사용자가 소유한 프로젝트 추출      |
+| /issue/create             | POST   | {project_id, issue_content} |                                                  |                      | 이슈등록                           |
+| /issue/list/:project_id   | GET    |                             | {list : {issue_content}}                         |                      | 프로젝트에 해당하는 이슈 추출      |
+| /member/search/:user_name | GET    |                             | {list : {user_id}}                               | 1.해당 사용자가 없음 | 사용자 이름에 해당하는 아이디 추출 |
+| /member/add               | POST   | {project_id, user_id}       |                                                  | 1.이미 추가한 사용자 | 참여자등록                         |
+| /member/list/:project_id  | GET    |                             | {list: {user_id}}                                |                      | 프로젝트에 해당하는 사용자 추출    |
+| /log/list/:project_id     | GET    |                             | {list: {meeting_id, meeting_date, meeting_name}} |                      | 프로젝트에 해당하는 회의록 추출    |
 
 ### /conf_log
 
 > 회의록 관련
 
-| Path                      | Method | req                         | res                                        | Code                 | 설명                               |
-| ------------------------- | ------ | --------------------------- | ------------------------------------------ | -------------------- | ---------------------------------- |
-| /log/fetch/:meeing_id     | GET    |                             | {list : {user_id, log_time, log_feeling, log_text}}  |                      | 회의록 내용 가져오기     |
-| /log/fetch/:meeing_id/:feeling| GET    |                             | {list : {user_id, log_time, log_feeling, log_text}}  |                      | 감정 필터링 된 회의록 내용 가져오기     |
+| Path                           | Method | req | res                                                 | Code | 설명                                |
+| ------------------------------ | ------ | --- | --------------------------------------------------- | ---- | ----------------------------------- |
+| /log/fetch/:meeing_id          | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 회의록 내용 가져오기                |
+| /log/fetch/:meeing_id/:feeling | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 감정 필터링 된 회의록 내용 가져오기 |
 
 <br>
 
@@ -110,9 +110,9 @@ ex) { code : login_1 }
 
 > 회의록 관련
 
-| Path                      | Method | req                         | res                                        | Code                 | 설명                               |
-| ------------------------- | ------ | --------------------------- | ------------------------------------------ | -------------------- | ---------------------------------- |
-| /log/wordcloud/:meeing_id     | GET    |                             | {list :(word,count)}  |                      | 단어빈도수 리스트     |
-
+| Path                      | Method | req | res                  | Code | 설명              |
+| ------------------------- | ------ | --- | -------------------- | ---- | ----------------- |
+| /log/wordcloud/:meeing_id | GET    |     | {list :(word,count)} |      | 단어빈도수 리스트 |
+| /log/summary/:meeting_id  | GET    |     | summary_text         |      | 회의록 요약       |
 
 <br>
