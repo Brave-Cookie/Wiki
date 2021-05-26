@@ -1,13 +1,13 @@
-# Flask 서버 가상환경 설정
+# Flask 실행법
 
-### 의존성 문제 발생 방지를 위해 파이썬 가상환경 사용
+### 파이썬 백엔드 Rest API 서버 실행
 
 
 <br>
 
-### 가상환경 .venv 사용법
+### 가상환경 .venv 사용
 
-1. ` backend_flask` 폴더에서 터미널 오픈
+1. `backend_flask` 폴더에서 터미널 오픈
 
 2. 가상환경 생성
 ```
@@ -24,6 +24,18 @@
 ```
 > python app.py
 ```
+
+### 설치 모듈 리스트 추출
+
+1. 가상환경 실행
+
+2. 명령어 실행
+```
+> pip freeze > requirements.txt
+```
+
+3. `backend_flask` 폴더 하위에 txt 파일 생성
+
 
 ### 주의사항
 
