@@ -72,7 +72,7 @@ ex) { code : login_1 }
 | /register        | POST   | {user_id, user_email, user_pw, user_name} |               | 1:아이디 중복됨                          | 회원가입                           |
 | /login           | POST   | {user_id, user_pw}                        | {accessToken} | 1:가입된 ID가 없음 <br>2:비밀번호가 틀림 | 로그인                             |
 | /createRoom  | POST    |  {room_code, meeting_name}      |               |                                          | 회의방 임시정보 저장        |
-| /check/:roomCode | GET    |                                           |   { meeting_name }   |                                          | 참여코드 유효성검사 |
+| /check/:roomCode | GET    |                                           |   { meeting_name }   |checkCode_1 : 방존재 X                                          | 참여코드 유효성검사 |
 
 ### /project
 
