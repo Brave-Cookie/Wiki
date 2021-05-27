@@ -71,8 +71,8 @@ ex) { code : login_1 }
 | ---------------- | ------ | ----------------------------------------- | ------------- | ---------------------------------------- | ---------------------------------- |
 | /register        | POST   | {user_id, user_email, user_pw, user_name} |               | 1:아이디 중복됨                          | 회원가입                           |
 | /login           | POST   | {user_id, user_pw}                        | {accessToken} | 1:가입된 ID가 없음 <br>2:비밀번호가 틀림 | 로그인                             |
-| /save/:roomCode  | GET    |                                           |               |                                          | 회의방 코드를 테이블에 저장        |
-| /check/:roomCode | GET    |                                           |               |                                          | 해당 회의방 코드가 존재하는지 확인 |
+| /createRoom  | POST    |  {room_code, meeting_name}      |               |                                          | 회의방 임시 정보를 테이블에 저장        |
+| /check/:roomCode | GET    |                                           |   { meeting_name }   |                                          | 해당 회의방 코드가 존재하는지 확인 |
 
 ### /project
 
