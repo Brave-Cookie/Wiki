@@ -47,6 +47,19 @@ ex) { code : login_1 }
 
 <br>
 
+## React Frontend 주소
+
+### 기본 도메인
+> 데모 버전까지만 구현하므로 8080포트로 개발모드 구동
+
+| 환경     | 주소                      |
+| -------- | ------------------------- |
+| 개발서버 | https://localhost:8080 |
+| 배포서버 | https://3.36.71.108:8080 |
+| 도메인버전 | https://ec2-3-36-71-108.ap-northeast-2.compute.amazonaws.com:8080 |
+
+<br>
+
 ## Express Rest API 주소
 
 ### 기본 Domain
@@ -109,7 +122,7 @@ ex) { code : login_1 }
 | 환경     | 주소                      |
 | -------- | ------------------------- |
 | 개발서버 | https://localhost:5000/api |
-| 배포서버 | https://3.36.71.108:5000/api |
+| 배포서버 | https://13.124.239.189:5000/api |
 
 ### /meetingLog
 
