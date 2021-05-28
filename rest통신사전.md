@@ -53,7 +53,8 @@ ex) { code : login_1 }
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | http://localhost:3000/api |
+| 개발서버 | https://localhost:3000/api |
+| 배포서버 | https://13.124.239.189:3000/api |
 
 ### /test
 
@@ -107,7 +108,8 @@ ex) { code : login_1 }
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | http://localhost:5000/api |
+| 개발서버 | https://localhost:5000/api |
+| 배포서버 | https://3.36.71.108:5000/api |
 
 ### /meetingLog
 
