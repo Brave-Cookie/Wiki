@@ -32,7 +32,7 @@
 
 ### Flask Docker 빌드
 
-1. `backend` 폴더에서 터미널 오픈
+1. `backend_flask` 폴더에서 터미널 오픈
 
 2. 도커 이미지 생성 (아래 명령어 실행)
 
