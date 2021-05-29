@@ -73,9 +73,9 @@ ex) { code : login_1 }
 
 > 테스트 관련
 
-| Path    | Method | Data          | 설명             |
-| ------- | ------ | ------------- | ---------------- |
-| /chk_DB | POST   | 테스트 데이터 | Rest 통신 테스트 |
+| Path                          | Method | req | res                   | Code | 설명              |
+| ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
+|/chk_DB|POST||{test DB}||api 서버 응답 테스트|
 
 ### /auth
 
@@ -124,14 +124,23 @@ ex) { code : login_1 }
 | 개발서버 | https://localhost:5000/api |
 | 배포서버 | https://13.124.239.189:5000/api |
 
-### /meetingLog
+### /test
+
+> 테스트용
+
+| Path                          | Method | req | res                   | Code | 설명              |
+| ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
+|/|POST||||api 서버 응답 테스트|
+
+
+### /log
 
 > 회의록 관련
 
 | Path                          | Method | req | res                   | Code | 설명              |
 | ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
-| /log/wordcloud/:meeing_id     | GET    |     | {list :(word,count)}  |      | 단어빈도수 리스트 |
-| /log/summary/:meeting_id      | GET    |     | summary_text          |      | 회의록요약        |
-| /log/feelingCount/:meeting_id | GET    |     | list:{'feeling':횟수} |      | 감정빈도수        |
+| /wordcloud/:meeing_id     | GET    |     | {list :(word,count)}  |      | 단어빈도수 리스트 |
+| /summary/:meeting_id      | GET    |     | summary_text          |      | 회의록요약        |
+| /feelingCount/:meeting_id | GET    |     | list:{'feeling':횟수} |      | 감정빈도수        |
 
 <br>
