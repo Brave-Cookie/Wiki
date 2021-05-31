@@ -111,7 +111,7 @@ ex) { code : login_1 }
 | ------------------------------ | ------ | --- | --------------------------------------------------- | ---- | ----------------------------------- |
 | /log/fetch/:meeing_id          | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 회의록 내용 가져오기                |
 | /log/fetch/:meeing_id/:feeling | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 감정 필터링 된 회의록 내용 가져오기 |
-| /log/rank/:meeting_id/:feeling | GET    |     | firstrank :{user_name} ,total_rank :{user_id}                             |      | 보낸감정중 가장 많이 나온사람, 참여도 순위        |
+| /log/rank/:meeting_id/:feeling | GET    |     | firstrank ,total_rank{list: {user_id}}, count                             |      | 보낸감정중 가장 많이 나온사람, 참여도 순위, 감정별발언1등의발언횟수        |
 
 <br>
 
