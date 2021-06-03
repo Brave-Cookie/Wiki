@@ -55,8 +55,7 @@ ex) { code : login_1 }
 | 환경     | 주소                      |
 | -------- | ------------------------- |
 | 개발서버 | `https://localhost:8080` |
-| 배포서버 | `https://3.36.71.108:8080` |
-| 도메인버전 | `https://ec2-3-36-71-108.ap-northeast-2.compute.amazonaws.com:8080` |
+| 배포서버 | `https://flog.tk` |
 
 <br>
 
