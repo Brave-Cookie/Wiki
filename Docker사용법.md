@@ -32,7 +32,7 @@
 
 ### Flask Docker 빌드
 
-1. `backend` 폴더에서 터미널 오픈
+1. `backend_flask` 폴더에서 터미널 오픈
 
 2. 도커 이미지 생성 (아래 명령어 실행)
 
@@ -45,6 +45,11 @@
 ```
 > docker run -d --name con_backend_flask -p 5000:5000 -v ${PWD}:/myfolder/ backend_flask
 ```
+
+![image](https://user-images.githubusercontent.com/71180414/119971063-77057c00-bfeb-11eb-84f3-3a323eaf653e.png)
+
+![image](https://user-images.githubusercontent.com/71180414/119971091-808ee400-bfeb-11eb-9e73-6a9410999ecf.png)
+
 
 <br>
 
@@ -59,6 +64,7 @@
 
 - 데이터가 바인딩되어있어 코드가 변경되면 수정사항이 바로 반영됨
 - 서버(컨테이너) 켜진 상태에서 Git pull해도 바로 반영됨
+- 반영이 안됐다 싶으면 컨테이너 서버를 껐다 켜주자!
 
 ### 실행이 안될 때
 

@@ -47,21 +47,34 @@ ex) { code : login_1 }
 
 <br>
 
+## React Frontend 주소
+
+### 기본 도메인
+> 데모 버전까지만 구현하므로 8080포트로 개발모드 구동
+
+| 환경     | 주소                      |
+| -------- | ------------------------- |
+| 개발서버 | `https://localhost:8080` |
+| 배포서버 | `https://flog.tk` |
+
+<br>
+
 ## Express Rest API 주소
 
 ### 기본 Domain
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | http://localhost:3000/api |
+| 개발서버 | `https://localhost:3000/api` |
+| 배포서버 | `https://13.124.239.189:3000/api` |
 
 ### /test
 
 > 테스트 관련
 
-| Path    | Method | Data          | 설명             |
-| ------- | ------ | ------------- | ---------------- |
-| /chk_DB | POST   | 테스트 데이터 | Rest 통신 테스트 |
+| Path                          | Method | req | res                   | Code | 설명              |
+| ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
+|/chk_DB|POST||{test DB}||api 서버 응답 테스트|
 
 ### /auth
 
@@ -81,7 +94,7 @@ ex) { code : login_1 }
 | Path                      | Method | req                         | res                                              | Code                 | 설명                               |
 | ------------------------- | ------ | --------------------------- | ------------------------------------------------ | -------------------- | ---------------------------------- |
 | /create                   | POST   | {user_id, project_name}     |                                                  |                      | 프로젝트 생성                      |
-| /list/:user_id            | GET    |                             | {list : {project_id,project_name}}               |                      | 사용자가 소유한 프로젝트 추출      |
+| /list/:user_id            | GET    |                             | {list : {project_id,project_name,count,date}}               |                      | 사용자가 소유한 프로젝트 추출      |
 | /issue/create             | POST   | {project_id, issue_content} |                                                  |                      | 이슈등록                           |
 | /issue/list/:project_id   | GET    |                             | {list : {issue_content}}                         |                      | 프로젝트에 해당하는 이슈 추출      |
 | /member/search/:user_name | GET    |                             | {list : {user_id}}                               | 1.해당 사용자가 없음 | 사용자 이름에 해당하는 아이디 추출 |
@@ -97,7 +110,8 @@ ex) { code : login_1 }
 | ------------------------------ | ------ | --- | --------------------------------------------------- | ---- | ----------------------------------- |
 | /log/fetch/:meeing_id          | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 회의록 내용 가져오기                |
 | /log/fetch/:meeing_id/:feeling | GET    |     | {list : {user_id, log_time, log_feeling, log_text}} |      | 감정 필터링 된 회의록 내용 가져오기 |
-| /log/rank/:meeting_id/:feeling | GET    |     | firstrank :{user_name} ,total_rank :{user_id}                             |      | 보낸감정중 가장 많이 나온사람, 참여도 순위        |
+| /log/rank/:meeting_id/:feeling | GET    |     | firstrank ,total_rank{list: {user_id}}, count                             |      | 보낸감정중 가장 많이 나온사람, 참여도 순위, 감정별발언1등의발언횟수        |
+| /log/avgFeeling/:meeing_id | GET    |     |avg:{time,emotion} |      | 회의 평균 감정 리스트  |
 
 <br>
 
@@ -107,16 +121,26 @@ ex) { code : login_1 }
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | http://localhost:5000/api |
+| 개발서버 | `https://localhost:5000/api` |
+| 배포서버 | `https://13.124.239.189:5000/api` |
 
-### /meetingLog
+### /test
+
+> 테스트용
+
+| Path                          | Method | req | res                   | Code | 설명              |
+| ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
+|/|POST||||api 서버 응답 테스트|
+
+
+### /log
 
 > 회의록 관련
 
 | Path                          | Method | req | res                   | Code | 설명              |
 | ----------------------------- | ------ | --- | --------------------- | ---- | ----------------- |
-| /log/wordcloud/:meeing_id     | GET    |     | {list :(word,count)}  |      | 단어빈도수 리스트 |
-| /log/summary/:meeting_id      | GET    |     | summary_text          |      | 회의록요약        |
-| /log/feelingCount/:meeting_id | GET    |     | list:{'feeling':횟수} |      | 감정빈도수        |
+| /wordcloud/:meeing_id     | GET    |     | {list :(word,count)}  |      | 단어빈도수 리스트 |
+| /summary/:meeting_id      | GET    |     | summary_text          |      | 회의록요약        |
+| /feelingCount/:meeting_id | GET    |     | list:{'feeling':횟수} |      | 감정빈도수        |
 
 <br>
