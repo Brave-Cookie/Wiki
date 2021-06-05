@@ -65,8 +65,8 @@ ex) { code : login_1 }
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | `https://localhost:3000/api` |
-| 배포서버 | `https://13.124.239.189:3000/api` |
+| 개발서버 | `http://localhost:3000/api` |
+| 배포서버 | `https://flog-express.tk/api` |
 
 ### /test
 
@@ -121,8 +121,8 @@ ex) { code : login_1 }
 
 | 환경     | 주소                      |
 | -------- | ------------------------- |
-| 개발서버 | `https://localhost:5000/api` |
-| 배포서버 | `https://13.124.239.189:5000/api` |
+| 개발서버 | `http://localhost:5000/api` |
+| 배포서버 | `https://flog-flask.tk/api` |
 
 ### /test
 
